@@ -1,1 +1,16 @@
 <h1>WELCOME TO ROCK PAPER SCISSORS</h1>
+
+<h2>Your Move is: <%=@play.choice%></h2>
+<h2>Comp Move is: <%=@play.computer_play%></h2>
+
+<% if @play.won? %>
+<h4>You Win The Game!</h4>
+<%end%>
+
+<% if @play.tied? %>
+<h4>It's A Tie!</h4>
+<%end%>
+
+<% if @play.lost? %>
+<h4>You Lost The Game!</h4>
+<%end%>
